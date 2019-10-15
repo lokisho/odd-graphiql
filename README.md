@@ -1,2 +1,2 @@
-# odd-graphiql
-Serverless graphiql example
+# odd-graphql
+Serverless graphql example
