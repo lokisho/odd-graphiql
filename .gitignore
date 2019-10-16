@@ -1,0 +1,8 @@
+.serverless
+lib
+!src/**/lib
+!config/**/lib
+node_modules
+config/local.*
+__coverage__
+yarn-error.log
