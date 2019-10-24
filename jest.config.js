@@ -27,6 +27,6 @@ module.exports = {
   //    '<rootDir>/jest.setup.js',
   //  ],
   transform: {
-    '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.tsx?$': 'ts-jest',
   },
 };

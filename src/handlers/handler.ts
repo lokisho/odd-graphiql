@@ -1,7 +1,4 @@
-// @flow
-import type { ObjectLiteral } from '@odd/odd-graphql/types/common';
-
-module.exports.hello = async (event: ObjectLiteral): ObjectLiteral => {
+module.exports.hello = async (event: object): Promise<object> => {
   return {
     statusCode: 200,
     body: JSON.stringify(

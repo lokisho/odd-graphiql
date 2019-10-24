@@ -1,12 +1,5 @@
 module.exports = {
   singleQuote: true,
   trailingComma: 'es5',
-  overrides: [
-    {
-      files: '*.js',
-      options: {
-        parser: 'flow',
-      },
-    },
-  ],
+  overrides: [],
 };

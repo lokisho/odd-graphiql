@@ -3,17 +3,19 @@ const WARN = 1;
 const ERROR = 2;
 
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   env: { node: true },
-  plugins: ['prettier', 'flowtype'],
-  extends: ['problems', 'plugin:prettier/recommended'],
-  rules: {
-    'flowtype/define-flow-type': ERROR,
-  },
+  plugins: ['prettier'], 
+  extends: [
+    'problems',
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended'
+  ],
+  rules: {},
   overrides: [
     {
       files: [
-        '**/*.test.js',
+        '**/*.test.ts',
         '**/*.mock.js',
       ],
       env: { jest: true },

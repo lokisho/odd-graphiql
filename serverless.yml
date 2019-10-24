@@ -59,14 +59,21 @@ provider:
 
 functions:
   hello:
-    handler: lib/handlers/handler.hello
+    handler: lib/src/handlers/handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+  graphql:
+     handler: lib/handlers/handler.graphqlHandler
+    events:
+      - http:
+          path: graphql 
+          method: post
+          cors: true
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
-    events:
-      - http:
-          path: /hello
-          method: get
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
