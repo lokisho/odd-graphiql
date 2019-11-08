@@ -4,7 +4,9 @@
     "sourceMap": true,
     "rootDir": "./src",
     "target": "es5",
-    "outDir": "lib"
+    "outDir": "lib",
+    "typeRoots": ["node_modules/@types", "src/@types"],
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*"
@@ -12,5 +14,6 @@
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
-  ]
+  ],
+  "files": ["src/@types/graphql.d.ts"]
 }
